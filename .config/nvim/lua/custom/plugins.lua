@@ -1,7 +1,7 @@
 local plugins = {
   {
     "jose-elias-alvarez/null-ls.nvim",
-    ft = {"python", "terraform"},
+    lazy = false,
     opts = function()
       return require "custom.configs.null-ls"
     end,
@@ -17,6 +17,8 @@ local plugins = {
         "terraform-ls",
         "tflint",
         "tfsec",
+        "ansible-lint",
+        "prettierd",
       },
     },
   },

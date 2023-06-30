@@ -3,6 +3,8 @@ local null_ls = require("null-ls")
 
 local opts = {
   sources = {
+    -- Shared
+    null_ls.builtins.formatting.prettierd,
     -- Python
     null_ls.builtins.formatting.black,
     null_ls.builtins.diagnostics.mypy,
@@ -10,6 +12,8 @@ local opts = {
     -- Terraform
     null_ls.builtins.formatting.terraform_fmt,
     null_ls.builtins.diagnostics.tfsec,
+    -- Ansible
+    null_ls.builtins.diagnostics.ansiblelint,
   },
   on_attach = function (client, bufnr)
     if client.supports_method("textDocument/formatting") then
