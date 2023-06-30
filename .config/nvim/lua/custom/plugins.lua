@@ -17,7 +17,6 @@ local plugins = {
         "terraform-ls",
         "tflint",
         "tfsec",
-        "ansible-lint",
         "prettierd",
       },
     },
