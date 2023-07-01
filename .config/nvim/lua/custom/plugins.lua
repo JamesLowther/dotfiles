@@ -33,6 +33,7 @@ local plugins = {
     opts = {
       ensure_installed = {
         "terraform",
+        "hcl",
       }
     }
   },
