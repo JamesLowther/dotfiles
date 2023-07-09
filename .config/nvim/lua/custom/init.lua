@@ -4,6 +4,8 @@ vim.filetype.add({
     [".*/roles/.*.yaml"] = "yaml.ansible",
     [".*/playbooks/.*.yml"] = "yaml.ansible",
     [".*/playbooks/.*.yaml"] = "yaml.ansible",
+    [".*.yml.j2"] = "yaml",
+    [".*.yaml.j2"] = "yaml",
   },
 })
 
